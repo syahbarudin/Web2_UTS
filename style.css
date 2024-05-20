@@ -100,3 +100,11 @@ body {
     cursor: pointer;
     color: #666;
 }
+.notification {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+}

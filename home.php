@@ -1,7 +1,9 @@
 <?php
-include 'src/check_session.php'; // Include fungsi cek sesi
+session_start();
+include 'config/db.php';
+include 'src/check_session.php';
 
-check_session(); // Panggil fungsi untuk memeriksa sesi
+check_session($conn);
 ?>
 
 <!DOCTYPE html>
@@ -15,5 +17,6 @@ check_session(); // Panggil fungsi untuk memeriksa sesi
     <h1>Welcome to the Home Page!</h1>
     <p>You are logged in.</p>
     <a href="src/logout.php">Logout</a>
+    <a href="profil.php">Profil</a>
 </body>
 </html>
